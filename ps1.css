@@ -1,0 +1,76 @@
+.card-body{
+  padding:3rem;
+}
+#image-wrappe{
+
+  overflow:hidden;
+
+}
+#navi{
+  position:fixed;
+  width:100%;
+  z-index:1;
+}
+b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 20px;
+}
+span1 {
+ display: inline-block;
+color: green;
+position: relative;
+white-space:nowrap;
+top: -0.4em;
+left: 0;
+-webkit-animation: move 10s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 6s;
+}
+
+@keyframes move {
+0%  { top: -0.4em;  }
+30% { top: -1.90em }
+50% { top: -3.40em; }
+70% { top: -4.90em; }
+100% { top: -0.4em; }
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+#zoomimg{
+  -webkit-animation:zoom 20s;
+  animation: zoom 20s;
+  overflow:hidden;
+  -webkit-animation-iteration-count: infinite;
+
+}
